@@ -1,0 +1,33 @@
+---
+title: Welcome to the Creative bbRealm
+description: Find the source of fun in the world of creativity!
+template: splash
+hero:
+  tagline: "Find the source of fun in the world of creativity!"
+  image:
+    file: ../../../assets/houston.webp
+  actions:
+    - text: Explore Wonderful Creations
+      link: /bbmonitor/quickstart/
+      icon: right-arrow
+      variant: primary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<div class="hero-bg">
+	<div class="bg-logo"></div>
+	<div class="bg-grad"></div>
+	<div class="bg-grad-red"></div>
+</div>
+
+## Wonderful Creations
+
+<CardGrid stagger>
+	<Card title="bbMonitor" icon="seti:favicon">
+		bbMonitor
+	</Card>
+	<Card title="bbAir" icon="seti:favicon">
+		bbAir
+	</Card>
+</CardGrid>
