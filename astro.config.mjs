@@ -7,6 +7,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'bbRealm',
+			customCss: [
+				'./src/styles/bb.css',
+			],
 			defaultLocale: 'root',
 			locales: {
 				// English docs in `src/content/docs/en/`
@@ -19,6 +22,7 @@ export default defineConfig({
 					lang: 'zh-CN',
 				}
 			},
+			favicon: '/favicon.ico',
 			social: {
 				github: 'https://github.com/RealCorebb',
 			},
