@@ -1,0 +1,60 @@
+---
+title: 快速开始
+description: 如何快速开始使用bbMonitor.
+sidebar:
+  order: 1
+---
+
+想要快速配置和使用 bbMonitor 吗？别担心，这里有个简单的指南。
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Aside } from '@astrojs/starlight/components';
+
+## 步骤一：安装电脑端软件（必须）
+- 首先，下载并安装 bbHome 软件。
+<CardGrid>
+  <LinkCard title="Windows版本" href="/bbMonitor/bbHome_1.1.4_x64-setup.exe" />
+  <LinkCard style="opacity:0.5;" title="Linux版本(即将支持)" />
+  <LinkCard style="opacity:0.5;" title="macOS版本(即将支持)" />
+</CardGrid>
+
+## 步骤二：连接设备（必须）
+- 使用 USB-A to USB-C 线（已附赠）分别连接 **电脑** 和 bbMonitor 背面的接口。
+![short](/images/bbMonitor/Connect.jpg)
+
+## 步骤三：设置网络连接（必须）
+- 打开 bbHome 软件，点击“添加设备”。
+![short](/images/bbMonitor/Add.jpg)
+- 确保 bbMonitor 已连接到电脑，如果有多个 bbMonitor 可以同时接上，即可一次性配置它们。
+- 在列表中，你会看到已识别到的 USB 串口设备，bbMonitor 的 ID 通常是 COM3，如果有多个设备，数字会递增。
+- 在下方输入你的 Wi-Fi 名称和密码，点击“配网”。
+![short](/images/bbMonitor/Provision.jpg)
+- 配置成功后，返回主界面，你会看到 bbMonitor 的设备卡片。
+![short](/images/bbMonitor/Devices.jpg)
+
+<Aside title="注意">
+  请输入2.4Ghz的 Wi-Fi 信息<br></br>
+  通常后缀有"_5"的为5Ghz的 Wi-Fi ，这是大多数物联网设备不支持的
+</Aside>
+<Aside title="确保你的电脑和 Wi-Fi 处于同一个局域网">
+  比如，你的电脑通过网线连接到了无线路由器，这时候你就要设置 bbMonitor 连接到这个无线路由器
+</Aside>
+
+## 步骤四：调整设置和亮度（可选）
+- 点击任意一个 bbMonitor 的卡片，对其进行设置。
+- 点击后，会显示RGB灯效，以便在存在多个bbMonitor的情况下确认是哪一台设备。
+![short](/images/bbMonitor/RGB.jpg)
+- 选择一个表盘，下方可以调整显示内容。
+- 可在滑动条中调整调节 指针速度 和 LED 亮度。
+![short](/images/bbMonitor/Config.jpg)
+
+## 步骤五：更换表盘（可选）
+- 如果需要，你可以更换 bbMonitor 的表盘，根据你的喜好设置显示内容。
+- 在购买时可以备注，这样就可以事先安装好，省去这一步。
+- 若要更换表盘，请先拧开表盘盖的螺丝。
+- 因为 LED 和表盘盖粘在一起，所以需要拧开整排螺丝。如果想省事，你也可以单独将一个表盘盖强行拉出，因为用的是压敏亚克力胶贴，所以可以多次粘贴。
+
+## 完成
+- 现在你已经配置好了！软件默认开机自启。之后，你可以在电脑右下角的图标中找到它。
+- 现在你可以将 bbMonitor 连在任意的5V规格的USB口上，而不需要占用电脑的USB口。
+- 请注意，点击软件右上角的 X 会将其最小化，而不是关闭。如果需要关闭，可以右键点击电脑右下角的图标，在弹出菜单中点击“×”。

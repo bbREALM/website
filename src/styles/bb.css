@@ -1,0 +1,9 @@
+img[alt="short"] { 
+  max-height: 416px;
+}
+img[alt="short-s"] { 
+  max-height: 200px;
+}
+img[alt="short-l"] { 
+  max-height: 600px;
+}
