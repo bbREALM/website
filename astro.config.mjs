@@ -23,13 +23,14 @@ export default defineConfig({
 				}
 			},
 			favicon: '/favicon.ico',
-			social: {
-				github: 'https://github.com/RealCorebb',
-			},
 			sidebar: [
 				{
-					label: 'bbMonitor',
-					autogenerate: { directory: 'bbmonitor' },
+					label: '📖产品说明书',
+					autogenerate: { directory: 'manuals' },
+				},
+				{
+					label: '🔍开源资源',
+					autogenerate: { directory: 'tutorials' },
 				},
 			],
 		}),
