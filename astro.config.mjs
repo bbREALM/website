@@ -7,6 +7,11 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'bbRealm',
+			logo: {
+				light: './src/assets/bbRealm_Bar.webp',
+				dark: './src/assets/bbRealm_Bar_White_Color.webp',
+				replacesTitle: true,
+			},
 			customCss: [
 				'./src/styles/bb.css',
 			],
@@ -24,15 +29,36 @@ export default defineConfig({
 			},
 			favicon: '/favicon.ico',
 			sidebar: [
+				{ 
+					label: '介绍', 
+					translations: {
+						'en': 'Introduction',
+					},
+					link: 'intro/welcome'
+				},
 				{
 					label: '📖产品说明书',
-					autogenerate: { directory: 'manuals' },
+					translations: {
+						'en': '📖Product Manual',
+					},
+					items: [
+						{
+							label: '电脑性能显示器bbMonitor',
+							translations: {
+								'en': 'bbMonitor Performance Monitor',
+							},
+							autogenerate: { directory: 'manuals/bbMonitor' },
+						}
+					]
 				},
 				{
 					label: '🔍开源资源',
+					translations: {
+						'en': '🔍Open Source Resources',
+					},
 					autogenerate: { directory: 'tutorials' },
 				},
-			],
+			]
 		}),
 	],
 });
