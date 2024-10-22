@@ -1,0 +1,52 @@
+---
+title: 往复运动结构
+description: 往复运动结构的资料.
+sidebar:
+    order: 1000
+---
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Aside } from '@astrojs/starlight/components';
+
+<script type="module" src="/scripts/model-viewer.min.js"></script>
+
+## 相关视频
+<div style="display:flex;width:100%;height:20vh">
+  <iframe style="width:50%;height:100%" allow="fullscreen;"
+    src="https://www.youtube.com/embed/FBC2ZbqyzIM">
+  </iframe>
+  <iframe style="width:50%;height:100%;margin-top:0px !important" src="//player.bilibili.com/player.html?isOutside=false&bvid=BV1rW42197UR" allowfullscreen="true"></iframe>
+</div>
+
+## Fusion工程文件
+
+- 本设计是由AutoDesk Fusion制作，对应的工程格式是.f3d，这是一款可以个人免费使用的软件，你可以下载然后导入，可以完整的了解我制作的步骤、修改模型、通过联接模拟运动状态。
+![short](/images/reciprocating.webp)
+
+<CardGrid>
+  <LinkCard title="F3D格式下载（Fusion）" href="/models/bbPOV-V v23.f3d" />
+</CardGrid>
+
+## 3D打印模型
+
+- 用来连接电机的转轴和连接往复运动的导向轴，并且其本身就是一个免组装带关节运动的模型。
+
+<div class="model-viewer-container">
+    <model-viewer
+        src="/models/bbPOV-V v22.glb"
+        camera-orbit="0deg 75deg 50%"
+        exposure="1.1"
+        autoplay
+        disable-pan
+        shadow-intensity="1"
+        shadow-softness="0"
+        camera-controls
+        touch-action="pan-y"
+        auto-rotate
+        auto-rotate-delay="0"
+        rotation-per-second="-5deg"
+    />
+</div>
+<CardGrid>
+  <LinkCard title="STL格式下载（用于3D打印）" href="/models/bbPOV-V v22.stl" />
+</CardGrid>

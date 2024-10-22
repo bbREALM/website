@@ -1,0 +1,54 @@
+---
+
+title: Reciprocating Motion Structure  
+description: Information about reciprocating motion structures.  
+sidebar:  
+    order: 1000  
+
+---
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';  
+import { Aside } from '@astrojs/starlight/components';  
+
+<script type="module" src="/scripts/model-viewer.min.js"></script>  
+
+## Related Videos  
+<div style="display:flex;width:100%;height:20vh">  
+  <iframe style="width:50%;height:100%" allow="fullscreen;"  
+    src="https://www.youtube.com/embed/FBC2ZbqyzIM">  
+  </iframe>  
+  <iframe style="width:50%;height:100%;margin-top:0px !important" src="//player.bilibili.com/player.html?isOutside=false&bvid=BV1rW42197UR" allowfullscreen="true"></iframe>  
+</div>  
+
+## Fusion Project File  
+
+- This design was created using AutoDesk Fusion, and the corresponding project format is .f3d. This is a software that can be used for free for personal use; you can download it and import the file to fully understand my creation steps, modify the model, and simulate motion states through connections.  
+![short](/images/reciprocating.webp)  
+
+<CardGrid>  
+  <LinkCard title="Download F3D Format (Fusion)" href="/models/bbPOV-V v23.f3d" />  
+</CardGrid>  
+
+## 3D Print Model  
+
+- This model serves as a connecting shaft for the motor and the guiding shaft for the reciprocating motion, and it is itself a pre-assembled model with joint movement.  
+
+<div class="model-viewer-container">  
+    <model-viewer  
+        src="/models/bbPOV-V v22.glb"  
+        camera-orbit="0deg 75deg 50%"  
+        exposure="1.1"  
+        autoplay  
+        disable-pan  
+        shadow-intensity="1"  
+        shadow-softness="0"  
+        camera-controls  
+        touch-action="pan-y"  
+        auto-rotate  
+        auto-rotate-delay="0"  
+        rotation-per-second="-5deg"  
+    />  
+</div>  
+<CardGrid>  
+  <LinkCard title="Download STL Format (for 3D Printing)" href="/models/bbPOV-V v22.stl" />  
+</CardGrid>

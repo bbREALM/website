@@ -1,0 +1,128 @@
+---
+title: 全息LED风扇bbPOV
+description: bbPOV-P全息LED风扇的资料.
+sidebar:
+    order: 1002
+---
+
+import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Aside } from '@astrojs/starlight/components';
+import { Icon } from '@astrojs/starlight/components';
+
+<script type="module" src="/scripts/model-viewer.min.js"></script>
+
+
+## 相关视频
+<div style="display:flex;width:100%;height:20vh">
+  <iframe style="width:50%;height:100%" allow="fullscreen;"
+    src="https://www.youtube.com/embed/HpYd48YgSek">
+  </iframe>
+  <iframe style="width:50%;height:100%;margin-top:0px !important" src="//player.bilibili.com/player.html?isOutside=true&aid=799422642&bvid=BV1Wy4y1a7t6&cid=303795707&p=1" allowfullscreen="true"></iframe>
+
+
+</div>
+<CardGrid>
+  <LinkCard icon="star" title="Youtube" href="https://afdian.com/p/1ef6fdfa792211ebbc9552540025c377" />
+  <LinkCard title="Bilibili" href="https://afdian.com/p/c39133d680d311ebaf9c52540025c377" />
+</CardGrid>
+
+## Github仓库（代码）
+<CardGrid>
+  <LinkCard title="Github(bbPOV-P)" href="https://github.com/RealCorebb/bbPOV-P" />
+</CardGrid>
+
+## 3D打印模型
+
+- 底盖。
+
+<div class="model-viewer-container">
+    <model-viewer
+        src="/models/底盖V2.glb"
+        exposure="1.1"
+        autoplay
+        disable-pan
+        shadow-intensity="1"
+        shadow-softness="0"
+        camera-controls
+        touch-action="pan-y"
+        auto-rotate
+        auto-rotate-delay="0"
+        rotation-per-second="-5deg"
+    />
+</div>
+<CardGrid>
+  <LinkCard title="STL格式下载（底盖V2.stl）" href="/models/底盖V2.stl" />
+</CardGrid>
+
+- 电机主体。
+
+<div class="model-viewer-container">
+    <model-viewer
+        src="/models/电机主体.glb"
+        exposure="1.1"
+        autoplay
+        disable-pan
+        shadow-intensity="1"
+        shadow-softness="0"
+        camera-controls
+        touch-action="pan-y"
+        auto-rotate
+        auto-rotate-delay="0"
+        rotation-per-second="-5deg"
+    />
+</div>
+<CardGrid>
+  <LinkCard title="STL格式下载（电机主体.stl）" href="/models/电机主体.stl" />
+</CardGrid>
+
+- 旋转部分。
+
+<div class="model-viewer-container">
+    <model-viewer
+        src="/models/旋转部分.glb"
+        exposure="1.1"
+        autoplay
+        disable-pan
+        shadow-intensity="1"
+        shadow-softness="0"
+        camera-controls
+        touch-action="pan-y"
+        auto-rotate
+        auto-rotate-delay="0"
+        rotation-per-second="-5deg"
+    />
+</div>
+<CardGrid>
+  <LinkCard title="STL格式下载（旋转部分.stl）" href="/models/旋转部分.stl" />
+</CardGrid>
+
+- 手持。
+
+<div class="model-viewer-container">
+    <model-viewer
+        src="/models/手持.glb"
+        exposure="1.1"
+        autoplay
+        disable-pan
+        shadow-intensity="1"
+        shadow-softness="0"
+        camera-controls
+        touch-action="pan-y"
+        auto-rotate
+        auto-rotate-delay="0"
+        rotation-per-second="-5deg"
+    />
+</div>
+<CardGrid>
+  <LinkCard title="STL格式下载（手持.stl）" href="/models/手持.stl" />
+</CardGrid>
+
+## Fusion工程文件、图文教程
+
+- 本设计是由AutoDesk Fusion制作，对应的工程格式是.f3d，这是一款可以个人免费使用的软件，你可以下载然后导入，可以完整的了解我制作的步骤、修改模型。因为这个在当时是提供给赞助者的，所以可以赞助后下载。
+- 因为这是比较难的项目，所以当时也有写图文教程提供给赞助者。
+
+<CardGrid>
+  <LinkCard title="F3D格式下载（Fusion）" href="https://afdian.com/p/1ef6fdfa792211ebbc9552540025c377" />
+  <LinkCard title="图文教程" href="https://afdian.com/p/c39133d680d311ebaf9c52540025c377" />
+</CardGrid>

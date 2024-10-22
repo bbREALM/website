@@ -1,0 +1,69 @@
+---
+title: Quick Start
+description: How to quickly start using bbMonitor.
+sidebar:
+  order: 1
+---
+
+Want to quickly set up and start using bbMonitor? Don't worry, here's a simple guide.
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { Aside } from '@astrojs/starlight/components';
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LinkButton
+  href="/manuals/bbmonitor/quickstart/"
+  icon="translate"
+  iconPlacement="start"
+>
+  中文说明文档
+</LinkButton>
+
+## Step 1: Install the Desktop Software (Required)
+- First, download and install the bbHome software.
+<CardGrid>
+  <LinkCard title="Windows Version" href="/bbMonitor/bbHome_1.1.6_x64-setup.exe" />
+  <LinkCard style="opacity:0.5;" title="Linux Version (Coming Soon)" />
+  <LinkCard style="opacity:0.5;" title="macOS Version (Coming Soon)" />
+</CardGrid>
+
+## Step 2: Connect the Device (Required)
+- Use the provided USB-A to USB-C cable to connect **your computer** to the back port of the bbMonitor.
+![short](/images/bbMonitor/Connect.jpg)
+
+## Step 3: Set Up Network Connection (Required)
+- Open the bbHome software and click "Add Device".
+![short](/images/bbMonitor/Add_EN.jpg)
+- Ensure the bbMonitor is connected to your computer. If you have multiple bbMonitors, you can connect and configure them simultaneously.
+- In the list, you will see the recognized USB serial devices. The bbMonitor's ID is usually COM3, with numbers increasing if multiple devices are connected.
+- Enter your Wi-Fi name and password below, then click "Provision".
+![short](/images/bbMonitor/Provision_EN.jpg)
+- Once configured, return to the main interface, where you will see the bbMonitor device card.
+![short](/images/bbMonitor/Devices_EN.jpg)
+
+<Aside title="Note">
+  Please enter the 2.4Ghz Wi-Fi information.<br></br>
+  Wi-Fi networks ending with "_5" are usually 5Ghz, which most IoT devices do not support.
+</Aside>
+<Aside title="Ensure your computer and Wi-Fi are on the same local network">
+  For example, if your computer is connected to the router via an Ethernet cable, make sure to set the bbMonitor to connect to the same router.
+</Aside>
+
+## Step 4: Adjust Settings and Brightness (Optional)
+- Click any bbMonitor card to configure it.
+- Upon clicking, RGB lighting will display, allowing you to identify the specific device if multiple bbMonitors are present.
+![short](/images/bbMonitor/RGB.jpg)
+- Choose a dial and adjust the display content below.
+- Adjust the pointer speed and LED brightness using the sliders.
+![short](/images/bbMonitor/Config_EN.jpg)
+
+## Step 5: Change the Dial (Optional)
+- If needed, you can change the bbMonitor dial to customize the display content to your preference.
+- You can specify this during purchase to have it pre-installed, saving you this step.
+- To change the dial, first unscrew the dial cover.
+- Since the LED and dial cover are glued together, you need to unscrew all the screws. Alternatively, you can forcibly pull out a single dial cover, as the pressure-sensitive acrylic adhesive allows for multiple reattachments.
+
+## Completion
+- Now you’re all set up! The software starts automatically on boot. You can find it in the system tray at the bottom right corner of your computer screen.
+- You can now connect the bbMonitor to any 5V USB port without occupying your computer’s USB port.
+- Note that clicking the X at the top right corner of the software minimizes it instead of closing it. To close the software, right-click the system tray icon and select "×" from the pop-up menu.
